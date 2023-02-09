@@ -22,3 +22,14 @@ def clients2(n_first_id: int, n_customers: int):
     return sum_clients + 1
 
 print(clients2(12, 100))
+
+
+def summ(m):
+    s = 0
+    for i in m:
+        while i > 0:
+            s += i % 10
+            i = i // 10
+    return s
+
+print(summ([100, 345, 344, 3444]))
